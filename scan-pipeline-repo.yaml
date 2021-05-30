@@ -1,0 +1,31 @@
+apiVersion: tekton.dev/v1alpha1
+kind: Pipeline
+metadata:
+  name: scan-pipeline-repo
+spec:
+  params:
+    - name: repo-scan
+
+    
+  workspaces:
+  - name: workspace
+
+  tasks:
+      
+  - name: scan-repo
+    
+    taskRef:
+      name: scan-repo
+    workspaces: 
+      - name: source
+        workspace: workspace
+    params:
+      - name: repo-scan
+        value: $(params.repo-scan)
+    
+
+
+  
+  
+   
+      
