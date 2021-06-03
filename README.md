@@ -3,7 +3,7 @@
 Pipeline-trivy
 
 </h1>
-This repository demonstrates Trivy, a vulnerability management tool for images and containers. It uses Tekton pipeline under the hood.  
+This repository demonstrates Trivy, a vulnerability management tool for images and containers. The elaborate working can be understood [here](https://rastogee-ayushi.medium.com/trivy-keep-your-artifacts-vulnerability-free-6dce292134e5).  
 
 
 The repo contains two tasks. Vulnerable-image pulls a sample image from Dockerhub, which is vulnerable. Task scan-image scans that pulled image through Trivy tool.
