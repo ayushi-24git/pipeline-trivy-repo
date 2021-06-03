@@ -6,22 +6,19 @@ metadata:
   name: scan-repo
 
 spec:
-  description: This task is for repo scanning.
+  description: This task is for repository scanning.
 
-  workspaces:
-    - name: source
-      description: Workspace for fetched image.
+  
 
   params:
     - name: repo-scan
       type: string
-      description: image to be scanned.
+      description: repo to be scanned.
       default: ""
 
   steps:
     - name: scan-repo-step
       image: aquasec/trivy:0.16.0
-      workingDir: $(workspaces.source.path)
+      
       script:  |
         trivy repo $(params.repo-scan)
-    
