@@ -5,14 +5,9 @@ metadata:
 spec:
   pipelineRef:
     name: scan-pipeline-repo
-  
-  workspaces:
-  - name: workspace
-    persistentvolumeclaim:
-      claimName: trivypvc
 
   params:
   
   - name: repo-scan
-    value: https://github.com/knqyf263/trivy-ci-test  
+    value: ""  
   
