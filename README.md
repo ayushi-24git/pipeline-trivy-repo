@@ -1,12 +1,12 @@
 <h1>
-Pipeline-trivy
+Pipeline-trivy-repo
 
 </h1>
 This repository demonstrates Trivy, a vulnerability management tool for images and containers. It uses Tekton pipeline under the hood.  
 
 
 
-The repo contains a single task, **scan-repo**, for scanning a repository through Trivy. After running the pipeline, user is first asked to enter the link of the repo to be scanned. Try [this](https://github.com/knqyf263/trivy-ci-test) one. Further working of Trivy can be understood [here](https://rastogee-ayushi.medium.com/trivy-keep-your-artifacts-vulnerability-free-6dce292134e5). 
+The repository contains a single task, **scan-repo**, for scanning a repository through Trivy. After running the pipeline, user is first asked to enter the link of the repo to be scanned. Try [this](https://github.com/knqyf263/trivy-ci-test) one. Further working of Trivy can be understood [here](https://rastogee-ayushi.medium.com/trivy-keep-your-artifacts-vulnerability-free-6dce292134e5). 
 
 ## Setting up cluster
 Set up a cluster using minikube by doing a minikube start.
